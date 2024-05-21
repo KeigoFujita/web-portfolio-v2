@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +22,7 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
  
-    --primary: 0 0% 9%;
+    --primary: 209 42% 44%;
     --primary-foreground: 0 0% 98%;
  
     --secondary: 0 0% 96.1%;
@@ -55,13 +55,13 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
  
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 209 42% 44%;
+    --primary-foreground: 0 0% 98%;
  
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
  
-    --accent: 0 0% 14.9%;
+    --accent: 0 0% 9%;
     --accent-foreground: 0 0% 98%;
  
     --destructive: 0 62.8% 30.6%;
@@ -86,21 +86,54 @@ input:-webkit-autofill:focus {
 }
 
 /* width */
-.dark .scrollbar::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
   @apply w-4 h-4;
 }
 
 /* Track */
-.dark .scrollbar::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track {
   @apply bg-neutral-700;
 }
 
 /* Handle */
-.dark .scrollbar::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb {
   @apply bg-neutral-800;
 }
 
 /* Handle on hover */
-.dark .scrollbar::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover {
   @apply bg-neutral-900;
+}
+
+
+
+
+.skill-card:hover:before, .skill-card:hover:after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  @apply rounded-md;
+  background: linear-gradient(45deg,  #7cb7ee, #41729F, #063663, #0b5da9, #7cb7ee, #41729F, #063663, #0b5da9);
+  background-size: 400%;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  z-index: -1;
+  animation: steam 10s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 250% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.skill-card:after {
+  filter: blur(40px);
 }
