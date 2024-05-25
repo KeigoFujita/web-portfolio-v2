@@ -1,5 +1,5 @@
 <template>
-  <div class="font-inter pt-16">
+  <div class="font-inter">
     <Navbar />
     <main class="scrollbar h-screen overflow-auto">
       <slot></slot>

@@ -24,6 +24,11 @@ import PHPStormIcon from "@/assets/icons/PHPStormIcon.vue";
 import WorkbenchIcon from "@/assets/icons/WorkbenchIcon.vue";
 import FigmaIcon from "@/assets/icons/FigmaIcon.vue";
 import PostmanIcon from "@/assets/icons/PostmanIcon.vue";
+import TechicalSkillCard from "@/components/TechicalSkillCard.vue";
+
+import ApiDevImage from "@/assets/technical_skills_images/ApiDevImage.vue";
+import DevelopmentProcessDocImage from "@/assets/technical_skills_images/DevelopmentProcessDocImage.vue";
+import HighFidelityWireframingImage from "@/assets/technical_skills_images/HighFidelityWireframingImage.vue";
 
 const programmingLanguages = [
   {
@@ -135,7 +140,7 @@ const toolsAndSoftware = [
 </script>
 
 <template>
-  <div class="py-24">
+  <div>
     <h1 class="text-6xl font-semibold mb-10">Skills</h1>
 
     <div class="flex w-full space-x-3 mb-5">
@@ -181,77 +186,47 @@ const toolsAndSoftware = [
     <div>
       <h1 class="text-xl mb-5">Technical Skills</h1>
       <div class="grid grid-cols-3 gap-3 mb-3">
-        <div
-          class="p-6 w-full bg-[#171717] bg-opacity-[79%] hover:bg-opacity-[100%] rounded border-2"
-        >
-          <h3 class="font-semibold text-neutral-200">
-            API Development & Integration
-          </h3>
-          <p class="text-neutral-500 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <TechicalSkillCard
+          :img="ApiDevImage"
+          title="API Development & Integration"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <div
-          class="p-6 w-full bg-[#171717] bg-opacity-[79%] hover:bg-opacity-[100%] rounded border-2"
-        >
-          <h3 class="font-semibold text-neutral-200">
-            API Development & Integration
-          </h3>
-          <p class="text-neutral-500 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            aliquip ex ea commodo consequat."
+        />
+        <TechicalSkillCard
+          :img="HighFidelityWireframingImage"
+          title="High Fidelity Wireframing"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <div
-          class="p-6 w-full bg-[#171717] bg-opacity-[79%] hover:bg-opacity-[100%] rounded border-2"
-        >
-          <h3 class="font-semibold text-neutral-200">
-            API Development & Integration
-          </h3>
-          <p class="text-neutral-500 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            aliquip ex ea commodo consequat."
+        />
+        <TechicalSkillCard
+          :img="DevelopmentProcessDocImage"
+          title="Development Process Documentation"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
+            aliquip ex ea commodo consequat."
+        />
       </div>
 
       <div class="grid grid-cols-2 gap-3">
-        <div
-          class="p-6 w-full bg-[#171717] bg-opacity-[79%] hover:bg-opacity-[100%] rounded border-2"
-        >
-          <h3 class="font-semibold text-neutral-200">
-            API Development & Integration
-          </h3>
-          <p class="text-neutral-500 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <TechicalSkillCard
+          title="Azure AD OAuth Integration"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <div
-          class="p-6 w-full bg-[#171717] bg-opacity-[79%] hover:bg-opacity-[100%] rounded border-2"
-        >
-          <h3 class="font-semibold text-neutral-200">
-            API Development & Integration
-          </h3>
-          <p class="text-neutral-500 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            aliquip ex ea commodo consequat."
+        />
+        <TechicalSkillCard
+          title="Open Street Maps Integration"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
+            aliquip ex ea commodo consequat."
+        />
       </div>
     </div>
   </div>
