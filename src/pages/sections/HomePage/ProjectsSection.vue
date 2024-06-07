@@ -270,10 +270,10 @@ const projects = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-6xl font-semibold mb-10">Projects</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Projects</h1>
 
     <div>
-      <div class="grid grid-cols-3 gap-3 mb-3">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
         <ProjectCard
           v-for="project in projects"
           :key="project.name"

@@ -7,11 +7,17 @@ import GmailIcon from "@/assets/icons/GmailIcon.vue";
 </script>
 
 <template>
-  <div class="flex w-full items-center space-x-4 h-[calc(100vh-4rem)]">
-    <div class="space-y-6 w-7/12">
+  <div
+    class="pt-20 md:pt-0 flex-col-reverse md:flex-row flex w-full items-center space-x-4 md:h-[calc(100vh-4rem)]"
+  >
+    <div class="space-y-6 md:w-7/12">
       <div>
-        <h1 class="text-6xl font-semibold mb-3">Hey There, I'm Keigo</h1>
-        <h2 class="text-3xl text-neutral-400">Full Stack Web Developer</h2>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-3">
+          Hey There, I'm Keigo
+        </h1>
+        <h2 class="text-2xl md:text-3xl text-neutral-400">
+          Full Stack Web Developer
+        </h2>
       </div>
       <!-- Contact Buttons -->
       <div class="flex items-center space-x-2">
@@ -53,7 +59,7 @@ import GmailIcon from "@/assets/icons/GmailIcon.vue";
           </div>
         </Button>
       </div>
-      <p class="font-light text-lg">
+      <p class="font-light text-base md:text-lg">
         Experienced Full Stack Web Developer with over 5 years of expertise in
         building high-quality, robust and scalable web applications using
         Laravel, MySQL, and Vue JS. Focused on enhancing code readability,
@@ -61,7 +67,7 @@ import GmailIcon from "@/assets/icons/GmailIcon.vue";
         workflows to drive productivity and ensure project success.
       </p>
     </div>
-    <div class="w-5/12">
+    <div class="mb-10 w-full md:w-5/12 md:mb-0">
       <HeroImage class="w-full" />
     </div>
   </div>

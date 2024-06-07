@@ -8,27 +8,30 @@ import Button from "@/components/ui/button/Button.vue";
 </script>
 
 <template>
-  <div class="py-24 border-t border-neutral-800">
-    <div class="flex max-w-6xl mx-auto">
-      <div>
-        <h1 class="text-6xl font-semibold mb-10">Contact</h1>
-        <h4 class="text-2xl mb-2 font-semibold">
+  <div class="px-12 py-16 md:py-24 border-t border-neutral-800">
+    <h1 class="md:hidden text-4xl font-semibold mb-10 text-center">Contact</h1>
+    <div class="flex flex-col-reverse md:flex-row max-w-6xl mx-auto">
+      <div class="text-center md:text-left">
+        <h1 class="hidden md:block text-6xl font-semibold mb-10">Contact</h1>
+        <h4 class="text-xl md:text-2xl mb-2 font-semibold">
           Wanna get in touch or talk about a project?
         </h4>
-        <p class="text-lg text-neutral-500 mb-10">
+        <p class="text-base md:text-lg text-neutral-500 mb-10">
           Feel free to contact me via email or through my social accounts below:
         </p>
-        <div class="flex space-x-2">
+        <div
+          class="flex items-center justify-center md:justify-start flex-wrap md:flex-nowrap space-x-2"
+        >
           <Button
             as="a"
             href="mailto:keigofujita19@gmail.com"
             target="_blank"
             variant="secondary"
-            class="bg-[#171717] rounded-full px-0 py-0 h-11"
+            class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
           >
             <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-              <GmailIcon class="w-5 h-5" />
-              <span class="text-sm">Gmail</span>
+              <GmailIcon class="h-4 md-4 md:w-5 md:h-5" />
+              <span class="text-xs md:text-sm">Gmail</span>
             </div>
           </Button>
 
@@ -37,11 +40,11 @@ import Button from "@/components/ui/button/Button.vue";
             href="https://web.facebook.com/keigo.fujita.94"
             target="_blank"
             variant="secondary"
-            class="bg-[#171717] rounded-full px-0 py-0 h-11"
+            class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
           >
             <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-              <FacebookIcon class="w-5 h-5" />
-              <span class="text-sm">Facebook</span>
+              <FacebookIcon class="h-4 md-4 md:w-5 md:h-5" />
+              <span class="text-xs md:text-sm">Facebook</span>
             </div>
           </Button>
           <Button
@@ -49,11 +52,11 @@ import Button from "@/components/ui/button/Button.vue";
             href="https://www.instagram.com/_keigofujita/"
             target="_blank"
             variant="secondary"
-            class="bg-[#171717] rounded-full px-0 py-0 h-11"
+            class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
           >
             <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-              <InstagramIcon class="w-5 h-5" />
-              <span class="text-sm">Instagram</span>
+              <InstagramIcon class="h-4 md-4 md:w-5 md:h-5" />
+              <span class="text-xs md:text-sm">Instagram</span>
             </div>
           </Button>
 
@@ -62,16 +65,16 @@ import Button from "@/components/ui/button/Button.vue";
             href="https://www.linkedin.com/in/keigo-fujita-2a1058143/"
             target="_blank"
             variant="secondary"
-            class="bg-[#171717] rounded-full px-0 py-0 h-11"
+            class="hidden md:inline-flex bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
           >
             <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-              <LinkedInIcon class="w-5 h-5" />
-              <span class="text-sm">LinkedIn</span>
+              <LinkedInIcon class="h-4 md-4 md:w-5 md:h-5" />
+              <span class="text-xs md:text-sm">LinkedIn</span>
             </div>
           </Button>
         </div>
       </div>
-      <div class="px-32 w-full">
+      <div class="px-20 py-10 md:py-0 md:px-32 w-full">
         <ContactImage class="w-full" />
       </div>
     </div>

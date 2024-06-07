@@ -8,9 +8,9 @@ const { scrollTo } = useScroll();
 
 <template>
   <nav class="fixed w-full top-0 dark:bg-dark-900 dark:text-white z-10">
-    <div class="max-w-6xl mx-auto">
+    <div class="px-4 md:px-0 md:max-w-6xl mx-auto">
       <div class="w-full flex items-center justify-between">
-        <div class="flex h-16 items-center space-x-4">
+        <div class="flex h-16 items-center space-x-2 md:space-x-4">
           <img
             class="h-9 w-9"
             :src="logo"
@@ -18,7 +18,7 @@ const { scrollTo } = useScroll();
           />
           <h1 class="dark:text-white font-semibold">KEIGO FUJITA</h1>
         </div>
-        <div>
+        <div class="hidden md:block">
           <ul class="flex items-center space-x-12">
             <li class="dark:text-neutral-200">
               <button @click="scrollTo('hero-section')">Home</button>

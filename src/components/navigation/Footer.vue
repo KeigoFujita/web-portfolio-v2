@@ -10,16 +10,20 @@ import GithubIcon from "@/assets/icons/GithubIcon.vue";
 <template>
   <footer class="bg-[#0F0F11] py-8">
     <div class="max-w-6xl mx-auto">
-      <div class="flex justify-between">
-        <div class="flex items-center space-x-4">
+      <div
+        class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:items-start justify-between"
+      >
+        <div class="flex flex-col md:flex-row items-center md:space-x-4">
           <img
-            class="h-12 w-12"
+            class="h-16 w-16 md:h-12 md:w-12 mb-3 md:mb-0"
             :src="logo"
             alt="Keigo Victor FUjita"
           />
-          <h1 class="text-xl dark:text-white font-semibold">KEIGO FUJITA</h1>
+          <h1 class="text-base md:text-xl dark:text-white font-semibold">
+            KEIGO FUJITA
+          </h1>
         </div>
-        <div>
+        <div class="hidden md:block">
           <div class="text-xs text-neutral-600 text-center">
             <p>Version 2.0</p>
             <p>Copyright 2024 © Keigo Fujita</p>
@@ -85,6 +89,13 @@ import GithubIcon from "@/assets/icons/GithubIcon.vue";
               <GithubIcon class="w-5 h-5" />
             </div>
           </Button>
+        </div>
+        <div class="block md:hidden">
+          <div class="text-xs text-neutral-600 text-center">
+            <p>Version 2.0</p>
+            <p>Copyright 2024 © Keigo Fujita</p>
+            <p>All Rights Reserved</p>
+          </div>
         </div>
       </div>
     </div>

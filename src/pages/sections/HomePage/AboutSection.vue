@@ -18,10 +18,10 @@ let galleryImages = [
 </script>
 
 <template>
-  <div class="py-24">
-    <h1 class="text-6xl font-semibold mb-10">About Me</h1>
-    <div class="flex mb-10">
-      <div class="w-3/5 pr-16">
+  <div class="py-12 md:py-24">
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10">About Me</h1>
+    <div class="flex flex-col-reverse md:flex-row mb-10">
+      <div class="w-full md:w-3/5 md:pr-16">
         <h1 class="font-semibold text-xl text-white mb-5">
           Hey there! I'm Keigo, a passionate Full Stack Web Developer based in
           the Philippines with over 5 years of experience in transforming ideas
@@ -58,7 +58,7 @@ let galleryImages = [
           </ul>
         </div>
       </div>
-      <div class="w-2/5">
+      <div class="mb-10 md:w-2/5">
         <img
           class="w-full"
           :src="ProfileImage"
@@ -66,7 +66,7 @@ let galleryImages = [
         />
       </div>
     </div>
-    <div class="grid grid-cols-6 gap-3 mb-10">
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10">
       <div
         class="bg-neutral-800 p-1 rounded-lg hover:bg-neutral-700 hover:scale-105 transition-all"
         v-for="image in galleryImages"
@@ -79,7 +79,7 @@ let galleryImages = [
       </div>
     </div>
     <div>
-      <h1 class="font-semibold text-3xl text-white mb-5">
+      <h1 class="font-semibold text-2xl md:text-3xl text-white mb-5">
         Awards and Recognition:
       </h1>
       <ul class="space-y-3 list-disc px-5 text-neutral-300">
