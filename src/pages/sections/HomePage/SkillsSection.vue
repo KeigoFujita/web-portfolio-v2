@@ -1,4 +1,5 @@
 <script setup>
+import { MapIcon, LockIcon } from "lucide-vue-next";
 import SkillCard from "@/components/SkillCard.vue";
 import GithubIcon from "@/assets/icons/GithubIcon.vue";
 import HTMLIcon from "@/assets/icons/HTMLIcon.vue";
@@ -140,7 +141,7 @@ const toolsAndSoftware = [
 </script>
 
 <template>
-  <div>
+  <div class="pt-24">
     <h1 class="text-6xl font-semibold mb-10">Skills</h1>
 
     <div class="flex w-full space-x-3 mb-5">
@@ -189,43 +190,31 @@ const toolsAndSoftware = [
         <TechicalSkillCard
           :img="ApiDevImage"
           title="API Development & Integration"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
+          description="Proficient in designing, developing, and integrating secure and scalable APIs tailored to meet specific project requirements."
         />
         <TechicalSkillCard
           :img="HighFidelityWireframingImage"
           title="High Fidelity Wireframing"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
+          description="Skilled in creating detailed wireframes to visualize user interfaces and enhance user experience (UX) for web applications."
         />
         <TechicalSkillCard
           :img="DevelopmentProcessDocImage"
           title="Development Process Documentation"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
+          description="Documented development processes to enhance code readability and ensure clarity and consistency in project workflows."
         />
       </div>
 
       <div class="grid grid-cols-2 gap-3">
         <TechicalSkillCard
           title="Azure AD OAuth Integration"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
-        />
+          description="Experienced in implementing Azure AD OAuth integration to secure and manage user authentication."
+          :icon="LockIcon"
+        >
+        </TechicalSkillCard>
         <TechicalSkillCard
           title="Open Street Maps Integration"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
+          description="Experienced using Leaflet.js to integrate OpenStreetMap into web applications, providing dynamic, interactive maps."
+          :icon="MapIcon"
         />
       </div>
     </div>
