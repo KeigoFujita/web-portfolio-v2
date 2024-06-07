@@ -72,6 +72,7 @@
 }
  
 @layer base {
+
   * {
     @apply border-border;
   }
@@ -87,22 +88,23 @@ input:-webkit-autofill:focus {
 
 /* width */
 .scrollbar::-webkit-scrollbar {
-  @apply w-4 h-4;
+  @apply w-3 h-3;
 }
 
 /* Track */
 .scrollbar::-webkit-scrollbar-track {
-  @apply bg-neutral-700;
+  @apply bg-neutral-900;
+ 
 }
 
 /* Handle */
 .scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-neutral-800;
+  @apply bg-neutral-700  rounded-lg p-0.5;
 }
 
 /* Handle on hover */
 .scrollbar::-webkit-scrollbar-thumb:hover {
-  @apply bg-neutral-900;
+  @apply bg-neutral-600;
 }
 
 
