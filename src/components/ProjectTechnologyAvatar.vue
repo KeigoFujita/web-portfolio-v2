@@ -1,6 +1,6 @@
 <script setup>
-import TooltipProvider from "./ui/tooltip/TooltipProvider.vue";
 import {
+  TooltipProvider,
   Tooltip,
   TooltipContent,
   TooltipTrigger,
