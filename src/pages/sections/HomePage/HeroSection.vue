@@ -1,9 +1,9 @@
 <script setup>
 import HeroImage from "@/assets/HeroImage.vue";
 import GithubIcon from "@/assets/icons/GithubIcon.vue";
-import EmailIcon from "@/assets/icons/EmailIcon.vue";
 import LinkedInIcon from "@/assets/icons/LinkedInIcon.vue";
 import Button from "@/components/ui/button/Button.vue";
+import GmailIcon from "@/assets/icons/GmailIcon.vue";
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import Button from "@/components/ui/button/Button.vue";
           href="https://www.linkedin.com/in/keigo-fujita-2a1058143/"
           target="_blank"
           variant="secondary"
-          class="rounded-full px-0 py-0 h-11"
+          class="bg-[#171717] rounded-full px-0 py-0 h-11"
         >
           <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
             <LinkedInIcon class="w-5 h-5" />
@@ -30,7 +30,7 @@ import Button from "@/components/ui/button/Button.vue";
 
         <Button
           variant="secondary"
-          class="rounded-full px-0 py-0 h-11"
+          class="bg-[#171717] rounded-full px-0 py-0 h-11"
           as="a"
           href="https://github.com/KeigoFujita"
           target="_blank"
@@ -45,11 +45,11 @@ import Button from "@/components/ui/button/Button.vue";
           as="a"
           href="mailto:keigofujita19@gmail.com"
           variant="secondary"
-          class="rounded-full px-0 py-0 h-11"
+          class="bg-[#171717] rounded-full px-0 py-0 h-11"
         >
           <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-            <EmailIcon class="w-5 h-5" />
-            <span class="text-sm">Email</span>
+            <GmailIcon class="w-5 h-5" />
+            <span class="text-sm">Gmail</span>
           </div>
         </Button>
       </div>
