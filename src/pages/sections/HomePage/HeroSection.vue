@@ -7,7 +7,7 @@ import Button from "@/components/ui/button/Button.vue";
 </script>
 
 <template>
-  <div class="flex w-full items-center py-24 space-x-4">
+  <div class="flex w-full items-center space-x-4 h-[calc(100vh-4rem)]">
     <div class="space-y-6 w-7/12">
       <div>
         <h1 class="text-6xl font-semibold mb-3">Hey There, I'm Keigo</h1>
@@ -16,49 +16,49 @@ import Button from "@/components/ui/button/Button.vue";
       <!-- Contact Buttons -->
       <div class="flex items-center space-x-2">
         <Button
-          variant="ghost"
+          as="a"
+          href="https://www.linkedin.com/in/keigo-fujita-2a1058143/"
+          target="_blank"
+          variant="secondary"
           class="rounded-full px-0 py-0 h-11"
         >
-          <router-link
-            to="/"
-            class="px-6 flex items-center space-x-2 rounded-lg text-white"
-          >
+          <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
             <LinkedInIcon class="w-5 h-5" />
             <span class="text-sm">LinkedIn</span>
-          </router-link>
+          </div>
         </Button>
 
         <Button
-          variant="ghost"
+          variant="secondary"
           class="rounded-full px-0 py-0 h-11"
+          as="a"
+          href="https://github.com/KeigoFujita"
+          target="_blank"
         >
-          <router-link
-            to="/"
-            class="px-6 flex items-center space-x-2 rounded-lg text-white"
-          >
+          <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
             <GithubIcon class="w-5 h-5" />
             <span class="text-sm">GitHub</span>
-          </router-link>
+          </div>
         </Button>
 
         <Button
-          variant="ghost"
+          as="a"
+          href="mailto:keigofujita19@gmail.com"
+          variant="secondary"
           class="rounded-full px-0 py-0 h-11"
         >
-          <router-link
-            to="/"
-            class="px-6 flex items-center space-x-2 rounded-lg text-white"
-          >
+          <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
             <EmailIcon class="w-5 h-5" />
             <span class="text-sm">Email</span>
-          </router-link>
+          </div>
         </Button>
       </div>
       <p class="font-light text-lg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Experienced Full Stack Web Developer with over 5 years of expertise in
+        building high-quality, robust and scalable web applications using
+        Laravel, MySQL, and Vue JS. Focused on enhancing code readability,
+        implemented efficient coding practices and optimized development
+        workflows to drive productivity and ensure project success.
       </p>
     </div>
     <div class="w-5/12">
