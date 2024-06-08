@@ -8,7 +8,7 @@ import ContactSection from "@/pages/sections/HomePage/ContactSection.vue";
 </script>
 <template>
   <BaseLayout>
-    <div class="px-6 md:px-0 md:max-w-6xl mx-auto">
+    <div class="px-6 md:px-12 lg:px-0 md:max-w-6xl mx-auto">
       <HeroSection id="hero-section" />
       <SkillsSection id="skills-section" />
       <ProjectsSection id="projects-section" />

@@ -8,7 +8,7 @@ const { scrollTo } = useScroll();
 
 <template>
   <nav class="fixed w-full top-0 dark:bg-dark-900 dark:text-white z-10">
-    <div class="px-4 md:px-0 md:max-w-6xl mx-auto">
+    <div class="px-4 md:px-12 lg:px-0 md:max-w-6xl mx-auto">
       <div class="w-full flex items-center justify-between">
         <div class="flex h-16 items-center space-x-2 md:space-x-4">
           <img
@@ -16,7 +16,11 @@ const { scrollTo } = useScroll();
             :src="logo"
             alt="Keigo Victor FUjita"
           />
-          <h1 class="dark:text-white font-semibold">KEIGO FUJITA</h1>
+          <h1
+            class="dark:text-white font-semibold inline-flex md:hidden lg:inline-flex"
+          >
+            KEIGO FUJITA
+          </h1>
         </div>
         <div class="hidden md:block">
           <ul class="flex items-center space-x-12">

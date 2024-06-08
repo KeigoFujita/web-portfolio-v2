@@ -273,7 +273,7 @@ const projects = [
     <h1 class="text-4xl md:text-6xl font-semibold mb-10">Projects</h1>
 
     <div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
+      <div class="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
         <ProjectCard
           v-for="project in projects"
           :key="project.name"

@@ -16,7 +16,7 @@ const props = defineProps({
     >
       <component
         :is="props.icon"
-        class="h-10 mb-2"
+        class="h-8 md:h-10 mb-2"
       />
       <span class="font-semibold text-neutral-300 text-sm select-none">
         {{ props.title }}

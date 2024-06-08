@@ -20,30 +20,34 @@ import GmailIcon from "@/assets/icons/GmailIcon.vue";
         </h2>
       </div>
       <!-- Contact Buttons -->
-      <div class="flex items-center space-x-2">
+      <div class="flex-wrap md:flex-nowrap flex items-center space-x-2">
         <Button
           as="a"
           href="https://www.linkedin.com/in/keigo-fujita-2a1058143/"
           target="_blank"
           variant="secondary"
-          class="bg-[#171717] rounded-full px-0 py-0 h-11"
+          class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
         >
-          <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-            <LinkedInIcon class="w-5 h-5" />
-            <span class="text-sm">LinkedIn</span>
+          <div
+            class="px-3 md:px-6 flex items-center space-x-2 rounded-lg text-white"
+          >
+            <LinkedInIcon class="h-4 md-4 md:w-5 md:h-5" />
+            <span class="text-xs md:text-sm">LinkedIn</span>
           </div>
         </Button>
 
         <Button
           variant="secondary"
-          class="bg-[#171717] rounded-full px-0 py-0 h-11"
+          class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
           as="a"
           href="https://github.com/KeigoFujita"
           target="_blank"
         >
-          <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-            <GithubIcon class="w-5 h-5" />
-            <span class="text-sm">GitHub</span>
+          <div
+            class="px-3 md:px-6 flex items-center space-x-2 rounded-lg text-white"
+          >
+            <GithubIcon class="h-4 md-4 md:w-5 md:h-5" />
+            <span class="text-xs md:text-sm">GitHub</span>
           </div>
         </Button>
 
@@ -51,11 +55,13 @@ import GmailIcon from "@/assets/icons/GmailIcon.vue";
           as="a"
           href="mailto:keigofujita19@gmail.com"
           variant="secondary"
-          class="bg-[#171717] rounded-full px-0 py-0 h-11"
+          class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
         >
-          <div class="px-6 flex items-center space-x-2 rounded-lg text-white">
-            <GmailIcon class="w-5 h-5" />
-            <span class="text-sm">Gmail</span>
+          <div
+            class="px-3 md:px-6 flex items-center space-x-2 rounded-lg text-white"
+          >
+            <GmailIcon class="h-4 md-4 md:w-5 md:h-5" />
+            <span class="text-xs md:text-sm">Gmail</span>
           </div>
         </Button>
       </div>

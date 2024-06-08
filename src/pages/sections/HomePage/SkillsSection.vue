@@ -144,11 +144,11 @@ const toolsAndSoftware = [
   <div class="pt-24">
     <h1 class="text-4xl md:text-6xl font-semibold mb-10">Skills</h1>
 
-    <div class="block md:hidden">
+    <div class="block lg:hidden">
       <div class="mb-10">
         <h1 class="text-xl mb-5">Programming Languages</h1>
         <div
-          class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-3 px-0.5"
+          class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-3 px-0.5"
         >
           <SkillCard
             v-for="programmingLanguage in programmingLanguages"
@@ -160,7 +160,7 @@ const toolsAndSoftware = [
       </div>
       <div class="mb-10">
         <h1 class="text-xl mb-5">Frameworks & Libraries</h1>
-        <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           <SkillCard
             v-for="frameworkAndLibrary in frameworksAndLibraries.slice(
               0,
@@ -200,7 +200,7 @@ const toolsAndSoftware = [
         </div>
       </div>
     </div>
-    <div class="hidden md:flex w-full space-x-3 mb-5">
+    <div class="hidden lg:flex w-full space-x-3 mb-5">
       <div class="w-full">
         <h1 class="text-xl mb-5">Tools & Software</h1>
         <div class="grid grid-cols-8 gap-3">
@@ -214,10 +214,10 @@ const toolsAndSoftware = [
       </div>
     </div>
 
-    <div class="block md:hidden w-full space-x-3 mb-5">
+    <div class="block lg:hidden w-full space-x-3 mb-5">
       <div class="w-full">
         <h1 class="text-xl mb-5">Tools & Software</h1>
-        <div class="grid grid-cols-3 gap-3">
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-3">
           <SkillCard
             v-for="toolAndSoftware in toolsAndSoftware"
             :key="toolAndSoftware.name"
@@ -230,7 +230,7 @@ const toolsAndSoftware = [
 
     <div>
       <h1 class="text-xl mb-5">Technical Skills</h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
         <TechicalSkillCard
           :img="ApiDevImage"
           title="API Development & Integration"

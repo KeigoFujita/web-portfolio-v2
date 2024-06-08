@@ -9,9 +9,9 @@ import GithubIcon from "@/assets/icons/GithubIcon.vue";
 </script>
 <template>
   <footer class="bg-[#0F0F11] py-8">
-    <div class="max-w-6xl mx-auto">
+    <div class="px-12 lg:px-12 xl:px-0 max-w-6xl mx-auto">
       <div
-        class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:items-start justify-between"
+        class="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:items-start justify-between"
       >
         <div class="flex flex-col md:flex-row items-center md:space-x-4">
           <img
@@ -23,7 +23,7 @@ import GithubIcon from "@/assets/icons/GithubIcon.vue";
             KEIGO FUJITA
           </h1>
         </div>
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
           <div class="text-xs text-neutral-600 text-center">
             <p>Version 2.0</p>
             <p>Copyright 2024 © Keigo Fujita</p>
@@ -90,7 +90,7 @@ import GithubIcon from "@/assets/icons/GithubIcon.vue";
             </div>
           </Button>
         </div>
-        <div class="block md:hidden">
+        <div class="block lg:hidden">
           <div class="text-xs text-neutral-600 text-center">
             <p>Version 2.0</p>
             <p>Copyright 2024 © Keigo Fujita</p>

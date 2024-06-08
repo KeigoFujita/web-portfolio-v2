@@ -8,9 +8,9 @@ import Button from "@/components/ui/button/Button.vue";
 </script>
 
 <template>
-  <div class="px-12 py-16 md:py-24 border-t border-neutral-800">
+  <div class="px-12 py-16 lg:py-24 border-t border-neutral-800">
     <h1 class="md:hidden text-4xl font-semibold mb-10 text-center">Contact</h1>
-    <div class="flex flex-col-reverse md:flex-row max-w-6xl mx-auto">
+    <div class="flex flex-col-reverse lg:flex-row md:max-w-6xl mx-auto">
       <div class="text-center md:text-left">
         <h1 class="hidden md:block text-6xl font-semibold mb-10">Contact</h1>
         <h4 class="text-xl md:text-2xl mb-2 font-semibold">
@@ -20,7 +20,7 @@ import Button from "@/components/ui/button/Button.vue";
           Feel free to contact me via email or through my social accounts below:
         </p>
         <div
-          class="flex items-center justify-center md:justify-start flex-wrap md:flex-nowrap space-x-2"
+          class="flex items-center justify-center md:justify-start flex-wrap lg:flex-nowrap space-x-2"
         >
           <Button
             as="a"
@@ -74,8 +74,8 @@ import Button from "@/components/ui/button/Button.vue";
           </Button>
         </div>
       </div>
-      <div class="px-20 py-10 md:py-0 md:px-32 w-full">
-        <ContactImage class="w-full" />
+      <div class="px-20 py-10 md:py-12 lg:py-0 lg:px-32 w-full">
+        <ContactImage class="w-full md:w-72 md:mx-auto lg:w-full" />
       </div>
     </div>
   </div>
