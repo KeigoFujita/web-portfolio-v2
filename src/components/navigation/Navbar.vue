@@ -40,6 +40,10 @@ const { scrollTo } = useScroll();
         </div>
         <div>
           <Button
+            as="a"
+            href="/Keigo Victor Fujita - Resume.pdf"
+            target="_blank"
+            download
             size="sm"
             class="text-xs px-4"
           >
