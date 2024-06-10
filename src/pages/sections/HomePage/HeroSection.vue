@@ -23,7 +23,7 @@ import GmailIcon from "@/assets/icons/GmailIcon.vue";
       <div class="flex-wrap md:flex-nowrap flex items-center space-x-2">
         <Button
           as="a"
-          href="https://www.linkedin.com/in/keigo-fujita-2a1058143/"
+          href="https://www.linkedin.com/in/keigo-victor-fujita/"
           target="_blank"
           variant="secondary"
           class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
