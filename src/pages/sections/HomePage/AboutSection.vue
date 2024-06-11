@@ -1,11 +1,12 @@
 <script setup>
-import ProfileImage from "@/assets/images/profile_image.png";
+import ProfileImage from "@/assets/profile_transparent.png";
 import GalleryImage1 from "@/assets/images/gallery/image_1.png";
 import GalleryImage2 from "@/assets/images/gallery/image_2.png";
 import GalleryImage3 from "@/assets/images/gallery/image_3.png";
 import GalleryImage4 from "@/assets/images/gallery/image_4.png";
 import GalleryImage5 from "@/assets/images/gallery/image_5.png";
 import GalleryImage6 from "@/assets/images/gallery/image_6.png";
+import ProfileBackgroundShape from "@/assets/ProfileBackgroundShape.vue";
 
 let galleryImages = [
   GalleryImage1,
@@ -58,12 +59,17 @@ let galleryImages = [
           </ul>
         </div>
       </div>
-      <div class="mb-10 md:w-2/5">
-        <img
-          class="w-full"
-          :src="ProfileImage"
-          alt="Profile Image"
-        />
+      <div class="mt-10 md:mt-0 mb-10 md:w-2/5">
+        <div class="relative text-center">
+          <img
+            class="w-full relative z-[1]"
+            :src="ProfileImage"
+            alt="Profile Image"
+          />
+          <ProfileBackgroundShape
+            class="absolute -top-8 w-full lg:w-96 left-0 right-0 mx-auto"
+          />
+        </div>
       </div>
     </div>
     <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10">
