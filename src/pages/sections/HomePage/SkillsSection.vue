@@ -142,15 +142,11 @@ const toolsAndSoftware = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">
-      Skills
-    </h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Skills</h1>
 
     <div class="block lg:hidden">
       <div class="mb-10">
-        <h1 class="text-xl mb-5">
-          Programming Languages
-        </h1>
+        <h1 class="text-xl mb-5">Programming Languages</h1>
         <div
           class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-3 px-0.5"
         >
@@ -163,9 +159,7 @@ const toolsAndSoftware = [
         </div>
       </div>
       <div class="mb-10">
-        <h1 class="text-xl mb-5">
-          Frameworks & Libraries
-        </h1>
+        <h1 class="text-xl mb-5">Frameworks & Libraries</h1>
         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           <SkillCard
             v-for="frameworkAndLibrary in frameworksAndLibraries.slice(
@@ -182,9 +176,7 @@ const toolsAndSoftware = [
 
     <div class="hidden lg:flex w-full space-x-3 mb-5">
       <div class="md:w-1/2 lg:w-[37.5%]">
-        <h1 class="text-xl mb-5">
-          Programming Languages
-        </h1>
+        <h1 class="text-xl mb-5">Programming Languages</h1>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-0.5"
         >
@@ -197,9 +189,7 @@ const toolsAndSoftware = [
         </div>
       </div>
       <div class="md:w-1/2 lg:w-[62.5%]">
-        <h1 class="text-xl mb-5">
-          Frameworks & Libraries
-        </h1>
+        <h1 class="text-xl mb-5">Frameworks & Libraries</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3">
           <SkillCard
             v-for="frameworkAndLibrary in frameworksAndLibraries"
@@ -212,9 +202,7 @@ const toolsAndSoftware = [
     </div>
     <div class="hidden lg:flex w-full space-x-3 mb-5">
       <div class="w-full">
-        <h1 class="text-xl mb-5">
-          Tools & Software
-        </h1>
+        <h1 class="text-xl mb-5">Tools & Software</h1>
         <div class="grid grid-cols-8 gap-3">
           <SkillCard
             v-for="toolAndSoftware in toolsAndSoftware"
@@ -228,9 +216,7 @@ const toolsAndSoftware = [
 
     <div class="block lg:hidden w-full space-x-3 mb-5">
       <div class="w-full">
-        <h1 class="text-xl mb-5">
-          Tools & Software
-        </h1>
+        <h1 class="text-xl mb-5">Tools & Software</h1>
         <div class="grid grid-cols-3 md:grid-cols-4 gap-3">
           <SkillCard
             v-for="toolAndSoftware in toolsAndSoftware"
@@ -243,9 +229,7 @@ const toolsAndSoftware = [
     </div>
 
     <div>
-      <h1 class="text-xl mb-5">
-        Technical Skills
-      </h1>
+      <h1 class="text-xl mb-5">Technical Skills</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
         <TechicalSkillCard
           :img="ApiDevImage"

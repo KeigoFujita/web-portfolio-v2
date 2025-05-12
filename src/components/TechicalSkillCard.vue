@@ -3,14 +3,14 @@ defineProps({
   title: { type: String, required: true },
   description: { type: String, required: true },
   img: { type: Object, required: false, default: () => null },
-  icon: { type: Function, required: false, default: () => null },
+  icon: { type: Function, required: false, default: null },
 });
 </script>
 
 <template>
   <div
     class="p-6 w-full bg-[#171717] bg-opacity-[79%] hover:bg-opacity-[100%] rounded border-2 group"
-    :class="[icon !== undefined ? 'flex flex-row space-x-5' : '']"
+    :class="[icon && 'flex flex-row space-x-5']"
   >
     <div
       v-if="img"
