@@ -4,7 +4,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 defineProps({
   name: { type: String, required: true },
@@ -25,7 +25,7 @@ defineProps({
         </div>
       </TooltipTrigger>
       <TooltipContent side="bottom">
-        <span class="text-white">{{ name }}</span>
+        <span>{{ name }}</span>
       </TooltipContent>
     </Tooltip>
   </TooltipProvider>

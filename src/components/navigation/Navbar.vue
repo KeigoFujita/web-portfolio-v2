@@ -1,13 +1,13 @@
 <script setup>
-import logo from "@/assets/logo.png";
-import Button from "@/components/ui/button/Button.vue";
-import useScroll from "@/composable/useScroll";
+import logo from '@/assets/logo.png';
+import Button from '@/components/ui/button/Button.vue';
+import useScroll from '@/composable/useScroll';
 
 const { scrollTo } = useScroll();
 </script>
 
 <template>
-  <nav class="fixed w-full top-0 dark:bg-dark-900 dark:text-white z-10">
+  <nav class="fixed w-full top-0 dark:bg-[#111111] dark:text-white z-10">
     <div class="px-4 md:px-12 lg:px-0 md:max-w-6xl mx-auto">
       <div class="w-full flex items-center justify-between">
         <div class="flex h-16 items-center space-x-2 md:space-x-4">

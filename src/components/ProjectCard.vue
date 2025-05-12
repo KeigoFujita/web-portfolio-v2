@@ -4,10 +4,9 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import Button from "@/components/ui/button/Button.vue";
-import { ChevronRightIcon, CodeBracketIcon } from "@heroicons/vue/24/solid";
-import ProjectTechnologyAvatar from "./ProjectTechnologyAvatar.vue";
+} from '@/components/ui/tooltip';
+import Button from '@/components/ui/button/Button.vue';
+import ProjectTechnologyAvatar from './ProjectTechnologyAvatar.vue';
 
 defineProps({
   name: { type: String, required: true },
@@ -15,12 +14,12 @@ defineProps({
   link: { type: String, default: null },
   repositoryLink: { type: String, default: null },
   img: { type: String, required: true },
-  imgBgClass: { type: String, required: false, default: "bg-[#293152]" },
+  imgBgClass: { type: String, required: false, default: 'bg-[#293152]' },
   technologies: { type: Object, required: true },
 });
 
 function openLink(link) {
-  window.open(link, "_blank");
+  window.open(link, '_blank');
 }
 </script>
 
@@ -75,8 +74,7 @@ function openLink(link) {
               class="px-4"
             >
               <div class="flex items-center space-x-2">
-                <CodeBracketIcon class="w-4 h-4 text-neutral-400" />
-                <span class="text-neutral-400">Source Code</span>
+                <span>Source Code</span>
               </div>
             </Button>
           </TooltipTrigger>
@@ -84,9 +82,7 @@ function openLink(link) {
             side="top"
             v-if="repositoryLink === null"
           >
-            <span class="text-white"
-              >Source code not available due to copyright.</span
-            >
+            <span>Source code not available due to copyright.</span>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
