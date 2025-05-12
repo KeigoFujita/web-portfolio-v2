@@ -5,7 +5,6 @@ import { globalIgnores } from 'eslint/config';
 
 export default [
   globalIgnores(['src/components/ui/**/*']), // Ignore all files in src/components/ui (shadcn-vue)
-  eslintConfigPrettier,
   ...pluginVue.configs['flat/recommended'],
   {
     rules: {
@@ -31,4 +30,5 @@ export default [
       },
     },
   },
+  eslintConfigPrettier, // Moved prettier config to the end to override any conflicting rules
 ];

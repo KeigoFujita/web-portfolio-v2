@@ -1,10 +1,10 @@
 <script setup>
-import ContactImage from "@/assets/ContactImage.vue";
-import GmailIcon from "@/assets/icons/GmailIcon.vue";
-import FacebookIcon from "@/assets/icons/FacebookIcon.vue";
-import InstagramIcon from "@/assets/icons/InstagramIcon.vue";
-import LinkedInIcon from "@/assets/icons/LinkedInIcon.vue";
-import Button from "@/components/ui/button/Button.vue";
+import ContactImage from '@/assets/ContactImage.vue';
+import GmailIcon from '@/assets/icons/GmailIcon.vue';
+import FacebookIcon from '@/assets/icons/FacebookIcon.vue';
+import InstagramIcon from '@/assets/icons/InstagramIcon.vue';
+import LinkedInIcon from '@/assets/icons/LinkedInIcon.vue';
+import Button from '@/components/ui/button/Button.vue';
 </script>
 
 <template>

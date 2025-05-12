@@ -1,140 +1,140 @@
 <script setup>
-import { MapIcon, LockIcon } from "lucide-vue-next";
-import SkillCard from "@/components/SkillCard.vue";
-import GithubIcon from "@/assets/icons/GithubIcon.vue";
-import HTMLIcon from "@/assets/icons/HTMLIcon.vue";
-import CSSIcon from "@/assets/icons/CSSIcon.vue";
-import JavaScriptIcon from "@/assets/icons/JavaScriptIcon.vue";
-import PHPIcon from "@/assets/icons/PHPIcon.vue";
-import MySQLIcon from "@/assets/icons/MySQLIcon.vue";
-import SQLServerIcon from "@/assets/icons/SQLServerIcon.vue";
-import LaravelIcon from "@/assets/icons/LaravelIcon.vue";
-import LivewireIcon from "@/assets/icons/LivewireIcon.vue";
-import SanctumIcon from "@/assets/icons/SanctumIcon.vue";
-import VueIcon from "@/assets/icons/VueIcon.vue";
-import JQueryIcon from "@/assets/icons/JQueryIcon.vue";
-import AlpineJSicon from "@/assets/icons/AlpineJSicon.vue";
-import AxiosIcon from "@/assets/icons/AxiosIcon.vue";
-import ViteIcon from "@/assets/icons/ViteIcon.vue";
-import TailwindIcon from "@/assets/icons/TailwindIcon.vue";
-import BootstrapIcon from "@/assets/icons/BootstrapIcon.vue";
-import JiraIcon from "@/assets/icons/JiraIcon.vue";
-import VSCodeIcon from "@/assets/icons/VSCodeIcon.vue";
-import AzureIcon from "@/assets/icons/AzureIcon.vue";
-import PHPStormIcon from "@/assets/icons/PHPStormIcon.vue";
-import WorkbenchIcon from "@/assets/icons/WorkbenchIcon.vue";
-import FigmaIcon from "@/assets/icons/FigmaIcon.vue";
-import PostmanIcon from "@/assets/icons/PostmanIcon.vue";
-import TechicalSkillCard from "@/components/TechicalSkillCard.vue";
+import { MapIcon, LockIcon } from 'lucide-vue-next';
+import SkillCard from '@/components/SkillCard.vue';
+import GithubIcon from '@/assets/icons/GithubIcon.vue';
+import HTMLIcon from '@/assets/icons/HTMLIcon.vue';
+import CSSIcon from '@/assets/icons/CSSIcon.vue';
+import JavaScriptIcon from '@/assets/icons/JavaScriptIcon.vue';
+import PHPIcon from '@/assets/icons/PHPIcon.vue';
+import MySQLIcon from '@/assets/icons/MySQLIcon.vue';
+import SQLServerIcon from '@/assets/icons/SQLServerIcon.vue';
+import LaravelIcon from '@/assets/icons/LaravelIcon.vue';
+import LivewireIcon from '@/assets/icons/LivewireIcon.vue';
+import SanctumIcon from '@/assets/icons/SanctumIcon.vue';
+import VueIcon from '@/assets/icons/VueIcon.vue';
+import JQueryIcon from '@/assets/icons/JQueryIcon.vue';
+import AlpineJSicon from '@/assets/icons/AlpineJSicon.vue';
+import AxiosIcon from '@/assets/icons/AxiosIcon.vue';
+import ViteIcon from '@/assets/icons/ViteIcon.vue';
+import TailwindIcon from '@/assets/icons/TailwindIcon.vue';
+import BootstrapIcon from '@/assets/icons/BootstrapIcon.vue';
+import JiraIcon from '@/assets/icons/JiraIcon.vue';
+import VSCodeIcon from '@/assets/icons/VSCodeIcon.vue';
+import AzureIcon from '@/assets/icons/AzureIcon.vue';
+import PHPStormIcon from '@/assets/icons/PHPStormIcon.vue';
+import WorkbenchIcon from '@/assets/icons/WorkbenchIcon.vue';
+import FigmaIcon from '@/assets/icons/FigmaIcon.vue';
+import PostmanIcon from '@/assets/icons/PostmanIcon.vue';
+import TechicalSkillCard from '@/components/TechicalSkillCard.vue';
 
-import ApiDevImage from "@/assets/technical_skills_images/ApiDevImage.vue";
-import DevelopmentProcessDocImage from "@/assets/technical_skills_images/DevelopmentProcessDocImage.vue";
-import HighFidelityWireframingImage from "@/assets/technical_skills_images/HighFidelityWireframingImage.vue";
+import ApiDevImage from '@/assets/technical_skills_images/ApiDevImage.vue';
+import DevelopmentProcessDocImage from '@/assets/technical_skills_images/DevelopmentProcessDocImage.vue';
+import HighFidelityWireframingImage from '@/assets/technical_skills_images/HighFidelityWireframingImage.vue';
 
 const programmingLanguages = [
   {
-    name: "HTML",
+    name: 'HTML',
     icon: HTMLIcon,
   },
   {
-    name: "CSS",
+    name: 'CSS',
     icon: CSSIcon,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: JavaScriptIcon,
   },
 
   {
-    name: "PHP",
+    name: 'PHP',
     icon: PHPIcon,
   },
   {
-    name: "MySQL",
+    name: 'MySQL',
     icon: MySQLIcon,
   },
   {
-    name: "SQL Server",
+    name: 'SQL Server',
     icon: SQLServerIcon,
   },
 ];
 
 const frameworksAndLibraries = [
   {
-    name: "Laravel",
+    name: 'Laravel',
     icon: LaravelIcon,
   },
   {
-    name: "Livewire",
+    name: 'Livewire',
     icon: LivewireIcon,
   },
   {
-    name: "Sanctum API",
+    name: 'Sanctum API',
     icon: SanctumIcon,
   },
 
   {
-    name: "Vue JS",
+    name: 'Vue JS',
     icon: VueIcon,
   },
   {
-    name: "JQuery",
+    name: 'JQuery',
     icon: JQueryIcon,
   },
   {
-    name: "Alpine JS",
+    name: 'Alpine JS',
     icon: AlpineJSicon,
   },
   {
-    name: "Axios",
+    name: 'Axios',
     icon: AxiosIcon,
   },
   {
-    name: "Vite",
+    name: 'Vite',
     icon: ViteIcon,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: TailwindIcon,
   },
   {
-    name: "Bootstrap",
+    name: 'Bootstrap',
     icon: BootstrapIcon,
   },
 ];
 
 const toolsAndSoftware = [
   {
-    name: "GitHub",
+    name: 'GitHub',
     icon: GithubIcon,
   },
   {
-    name: "JIRA",
+    name: 'JIRA',
     icon: JiraIcon,
   },
   {
-    name: "Azure AD",
+    name: 'Azure AD',
     icon: AzureIcon,
   },
 
   {
-    name: "VS Code",
+    name: 'VS Code',
     icon: VSCodeIcon,
   },
   {
-    name: "PHP Storm",
+    name: 'PHP Storm',
     icon: PHPStormIcon,
   },
   {
-    name: "Workbench",
+    name: 'Workbench',
     icon: WorkbenchIcon,
   },
   {
-    name: "Figma",
+    name: 'Figma',
     icon: FigmaIcon,
   },
   {
-    name: "Postman",
+    name: 'Postman',
     icon: PostmanIcon,
   },
 ];
@@ -142,11 +142,15 @@ const toolsAndSoftware = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Skills</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10">
+      Skills
+    </h1>
 
     <div class="block lg:hidden">
       <div class="mb-10">
-        <h1 class="text-xl mb-5">Programming Languages</h1>
+        <h1 class="text-xl mb-5">
+          Programming Languages
+        </h1>
         <div
           class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-3 px-0.5"
         >
@@ -159,7 +163,9 @@ const toolsAndSoftware = [
         </div>
       </div>
       <div class="mb-10">
-        <h1 class="text-xl mb-5">Frameworks & Libraries</h1>
+        <h1 class="text-xl mb-5">
+          Frameworks & Libraries
+        </h1>
         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           <SkillCard
             v-for="frameworkAndLibrary in frameworksAndLibraries.slice(
@@ -176,7 +182,9 @@ const toolsAndSoftware = [
 
     <div class="hidden lg:flex w-full space-x-3 mb-5">
       <div class="md:w-1/2 lg:w-[37.5%]">
-        <h1 class="text-xl mb-5">Programming Languages</h1>
+        <h1 class="text-xl mb-5">
+          Programming Languages
+        </h1>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-0.5"
         >
@@ -189,7 +197,9 @@ const toolsAndSoftware = [
         </div>
       </div>
       <div class="md:w-1/2 lg:w-[62.5%]">
-        <h1 class="text-xl mb-5">Frameworks & Libraries</h1>
+        <h1 class="text-xl mb-5">
+          Frameworks & Libraries
+        </h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3">
           <SkillCard
             v-for="frameworkAndLibrary in frameworksAndLibraries"
@@ -202,7 +212,9 @@ const toolsAndSoftware = [
     </div>
     <div class="hidden lg:flex w-full space-x-3 mb-5">
       <div class="w-full">
-        <h1 class="text-xl mb-5">Tools & Software</h1>
+        <h1 class="text-xl mb-5">
+          Tools & Software
+        </h1>
         <div class="grid grid-cols-8 gap-3">
           <SkillCard
             v-for="toolAndSoftware in toolsAndSoftware"
@@ -216,7 +228,9 @@ const toolsAndSoftware = [
 
     <div class="block lg:hidden w-full space-x-3 mb-5">
       <div class="w-full">
-        <h1 class="text-xl mb-5">Tools & Software</h1>
+        <h1 class="text-xl mb-5">
+          Tools & Software
+        </h1>
         <div class="grid grid-cols-3 md:grid-cols-4 gap-3">
           <SkillCard
             v-for="toolAndSoftware in toolsAndSoftware"
@@ -229,7 +243,9 @@ const toolsAndSoftware = [
     </div>
 
     <div>
-      <h1 class="text-xl mb-5">Technical Skills</h1>
+      <h1 class="text-xl mb-5">
+        Technical Skills
+      </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
         <TechicalSkillCard
           :img="ApiDevImage"
@@ -253,8 +269,7 @@ const toolsAndSoftware = [
           title="Azure AD OAuth Integration"
           description="Experienced in implementing Azure AD OAuth integration to secure and manage user authentication."
           :icon="LockIcon"
-        >
-        </TechicalSkillCard>
+        />
         <TechicalSkillCard
           title="Open Street Maps Integration"
           description="Experienced using Leaflet.js to integrate OpenStreetMap into web applications, providing dynamic, interactive maps."

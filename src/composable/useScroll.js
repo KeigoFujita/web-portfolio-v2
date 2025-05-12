@@ -5,7 +5,7 @@ export default function useScroll() {
 
     window.scroll({
       top: y,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 

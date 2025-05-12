@@ -1,12 +1,12 @@
 <script setup>
-import ProfileImage from "@/assets/profile_transparent.png";
-import GalleryImage1 from "@/assets/images/gallery/image_1.png";
-import GalleryImage2 from "@/assets/images/gallery/image_2.png";
-import GalleryImage3 from "@/assets/images/gallery/image_3.png";
-import GalleryImage4 from "@/assets/images/gallery/image_4.png";
-import GalleryImage5 from "@/assets/images/gallery/image_5.png";
-import GalleryImage6 from "@/assets/images/gallery/image_6.png";
-import ProfileBackgroundShape from "@/assets/ProfileBackgroundShape.vue";
+import ProfileImage from '@/assets/profile_transparent.png';
+import GalleryImage1 from '@/assets/images/gallery/image_1.png';
+import GalleryImage2 from '@/assets/images/gallery/image_2.png';
+import GalleryImage3 from '@/assets/images/gallery/image_3.png';
+import GalleryImage4 from '@/assets/images/gallery/image_4.png';
+import GalleryImage5 from '@/assets/images/gallery/image_5.png';
+import GalleryImage6 from '@/assets/images/gallery/image_6.png';
+import ProfileBackgroundShape from '@/assets/ProfileBackgroundShape.vue';
 
 let galleryImages = [
   GalleryImage1,
@@ -74,8 +74,9 @@ let galleryImages = [
     </div>
     <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10">
       <div
-        class="bg-neutral-800 p-1 rounded-lg hover:bg-neutral-700 hover:scale-105 transition-all"
         v-for="image in galleryImages"
+        :key="image"
+        class="bg-neutral-800 p-1 rounded-lg hover:bg-neutral-700 hover:scale-105 transition-all"
       >
         <img
           class="w-full aspect-square rounded-lg"
@@ -90,17 +91,17 @@ let galleryImages = [
       </h1>
       <ul class="space-y-3 list-disc px-5 text-neutral-300">
         <li>
-          <span class="font-semibold text-neutral-100"
-            >Innovator of the year 2023</span
-          >
+          <span class="font-semibold text-neutral-100">
+            Innovator of the year 2023
+          </span>
           - Awarded for the exceptional development of the CNX Lighthouse
           Application, completed ahead of schedule and widely adopted by CNX
           employees. This innovative app was prominently featured at the
           Concentrix Tech Expo
         </li>
         <li>
-          <span class="font-semibold text-neutral-100"
-            >Innovator of the year 2022
+          <span class="font-semibold text-neutral-100">
+            Innovator of the year 2022
           </span>
           - Awarded for developing the CNX Shuttle Application, achieving an
           approved Finance Hard Savings of 4 million pesos. This app, providing

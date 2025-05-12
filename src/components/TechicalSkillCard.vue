@@ -2,8 +2,8 @@
 defineProps({
   title: { type: String, required: true },
   description: { type: String, required: true },
-  img: { type: Object, required: false },
-  icon: { type: Function, required: false },
+  img: { type: Object, required: false, default: () => null },
+  icon: { type: Function, required: false, default: () => null },
 });
 </script>
 
@@ -13,8 +13,8 @@ defineProps({
     :class="[icon !== undefined ? 'flex flex-row space-x-5' : '']"
   >
     <div
-      class="p-5 bg-[#1B1B1B] h-48 mb-5 rounded-md overflow-hidden group-hover:scale-95 transition-all"
       v-if="img"
+      class="p-5 bg-[#1B1B1B] h-48 mb-5 rounded-md overflow-hidden group-hover:scale-95 transition-all"
     >
       <component
         :is="img"

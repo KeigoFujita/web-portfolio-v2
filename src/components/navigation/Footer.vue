@@ -1,11 +1,11 @@
 <script setup>
-import logo from "@/assets/logo.png";
-import Button from "@/components/ui/button/Button.vue";
-import GmailIcon from "@/assets/icons/GmailIcon.vue";
-import FacebookIcon from "@/assets/icons/FacebookIcon.vue";
-import InstagramIcon from "@/assets/icons/InstagramIcon.vue";
-import LinkedInIcon from "@/assets/icons/LinkedInIcon.vue";
-import GithubIcon from "@/assets/icons/GithubIcon.vue";
+import logo from '@/assets/logo.png';
+import Button from '@/components/ui/button/Button.vue';
+import GmailIcon from '@/assets/icons/GmailIcon.vue';
+import FacebookIcon from '@/assets/icons/FacebookIcon.vue';
+import InstagramIcon from '@/assets/icons/InstagramIcon.vue';
+import LinkedInIcon from '@/assets/icons/LinkedInIcon.vue';
+import GithubIcon from '@/assets/icons/GithubIcon.vue';
 </script>
 <template>
   <footer class="bg-[#0F0F11] py-8">

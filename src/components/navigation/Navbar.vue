@@ -25,16 +25,24 @@ const { scrollTo } = useScroll();
         <div class="hidden md:block">
           <ul class="flex items-center space-x-12">
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('hero-section')">Home</button>
+              <button @click="scrollTo('hero-section')">
+                Home
+              </button>
             </li>
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('skills-section')">Skills</button>
+              <button @click="scrollTo('skills-section')">
+                Skills
+              </button>
             </li>
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('projects-section')">Projects</button>
+              <button @click="scrollTo('projects-section')">
+                Projects
+              </button>
             </li>
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('about-section')">About Me</button>
+              <button @click="scrollTo('about-section')">
+                About Me
+              </button>
             </li>
           </ul>
         </div>

@@ -1,9 +1,9 @@
 <script setup>
-import HeroImage from "@/assets/HeroImage.vue";
-import GithubIcon from "@/assets/icons/GithubIcon.vue";
-import LinkedInIcon from "@/assets/icons/LinkedInIcon.vue";
-import Button from "@/components/ui/button/Button.vue";
-import GmailIcon from "@/assets/icons/GmailIcon.vue";
+import HeroImage from '@/assets/HeroImage.vue';
+import GithubIcon from '@/assets/icons/GithubIcon.vue';
+import LinkedInIcon from '@/assets/icons/LinkedInIcon.vue';
+import Button from '@/components/ui/button/Button.vue';
+import GmailIcon from '@/assets/icons/GmailIcon.vue';
 </script>
 
 <template>

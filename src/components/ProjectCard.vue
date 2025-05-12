@@ -38,7 +38,9 @@ function openLink(link) {
       />
     </div>
     <div>
-      <h3 class="font-semibold text-neutral-200 mb-3">{{ name }}</h3>
+      <h3 class="font-semibold text-neutral-200 mb-3">
+        {{ name }}
+      </h3>
       <p class="text-neutral-500 text-sm">
         {{ description }}
       </p>
@@ -57,21 +59,21 @@ function openLink(link) {
     <div class="flex items-center space-x-2">
       <Button
         :disabled="link === null"
-        @click="openLink(link)"
         size="sm"
         class="bg-neutral-100 text-neutral-900 hover:bg-white/80 text-sm px-4 disabled:cursor-not-allowed"
+        @click="openLink(link)"
       >
         <span class="font-semibold">Visit Site</span>
       </Button>
       <TooltipProvider>
-        <Tooltip :delayDuration="200">
+        <Tooltip :delay-duration="200">
           <TooltipTrigger>
             <Button
               :disabled="repositoryLink === null"
-              @click="openLink(repositoryLink)"
               size="sm"
               variant="secondary"
               class="px-4"
+              @click="openLink(repositoryLink)"
             >
               <div class="flex items-center space-x-2">
                 <span>Source Code</span>
@@ -79,8 +81,8 @@ function openLink(link) {
             </Button>
           </TooltipTrigger>
           <TooltipContent
-            side="top"
             v-if="repositoryLink === null"
+            side="top"
           >
             <span>Source code not available due to copyright.</span>
           </TooltipContent>
@@ -90,6 +92,7 @@ function openLink(link) {
     <div class="flex items-center space-x-1">
       <ProjectTechnologyAvatar
         v-for="technology in technologies"
+        :key="technology.name"
         :name="technology.name"
         :icon="technology.icon"
       />

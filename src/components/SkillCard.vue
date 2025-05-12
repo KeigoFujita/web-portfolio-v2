@@ -2,10 +2,11 @@
 const props = defineProps({
   title: {
     type: String,
-    default: "Skill",
+    default: 'Skill',
   },
   icon: {
     type: Object,
+    required: true,
   },
 });
 </script>
