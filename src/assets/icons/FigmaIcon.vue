@@ -1,6 +1,21 @@
+<script setup>
+import { useAttrs } from 'vue';
+const props = defineProps({
+  active: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const attrs = useAttrs();
+</script>
 <template>
   <svg
-    viewBox="0 0 50 51"
+    v-if="!props.active"
+    v-bind="attrs"
+    width="50"
+    height="50"
+    viewBox="-5 -5 60 60"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -10,6 +25,36 @@
       stroke-width="3"
       stroke-linecap="round"
       stroke-linejoin="round"
+    />
+  </svg>
+  <svg
+    v-if="props.active"
+    v-bind="attrs"
+    width="50"
+    height="50"
+    viewBox="-5 -5 60 60"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11 39C11 35.22 14.0644 32.1556 17.8444 32.1556H24.6889V39C24.6889 42.7801 21.6245 45.8445 17.8444 45.8445C14.0644 45.8445 11 42.7801 11 39Z"
+      :fill="props.active ? '#24CB71' : 'white'"
+    />
+    <path
+      d="M24.6889 4.15556V17.8445H31.8444C35.7963 17.8445 39 14.7801 39 11C39 7.21996 35.7963 4.15556 31.8444 4.15556H24.6889Z"
+      :fill="props.active ? '#FF7237' : 'white'"
+    />
+    <path
+      d="M31.8444 32.1556C35.7963 32.1556 39 28.9519 39 25C39 21.0481 35.7963 17.8445 31.8444 17.8445C27.8925 17.8445 24.6889 21.0481 24.6889 25C24.6889 28.9519 27.8925 32.1556 31.8444 32.1556Z"
+      :fill="props.active ? '#00B6FF' : 'white'"
+    />
+    <path
+      d="M11 11C11 14.7801 14.0644 17.8445 17.8444 17.8445H24.6889V4.15556H17.8444C14.0644 4.15556 11 7.21996 11 11Z"
+      :fill="props.active ? '#FF3737' : 'white'"
+    />
+    <path
+      d="M11 25C11 28.9519 14.0644 32.1556 17.8444 32.1556H24.6889V17.8445H17.8444C14.0644 17.8445 11 21.0481 11 25Z"
+      :fill="props.active ? '#874FFF' : 'white'"
     />
   </svg>
 </template>

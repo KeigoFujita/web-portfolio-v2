@@ -1,3 +1,16 @@
+<script setup>
+import { computed } from 'vue';
+
+const props = defineProps({
+  active: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const primaryColor = computed(() => (props.active ? '#fd318e' : '#818181'));
+const secondaryColor = computed(() => (props.active ? '#8057f7' : '#757575'));
+</script>
 <template>
   <svg
     viewBox="0 0 50 51"
@@ -7,15 +20,15 @@
     <g clip-path="url(#clip0_56_349)">
       <path
         d="M0 10.1094L8.51562 0.5L25.9375 4.25L28.2812 11.3594L26.5625 23.7031L19.6363 20.1585L20 30.0312V38.625L4.76562 38.7812L0 10.1094Z"
-        fill="#818181"
+        :fill="primaryColor"
       />
       <path
         d="M15.7812 29.7969L16.7187 18L30.8594 3.46875L43.5156 5.8125L50 21.9844L43.2031 28.7031L32.1875 26.9062L25.2344 34.0938L15.7812 29.7969Z"
-        fill="#818181"
+        :fill="secondaryColor"
       />
       <path
         d="M30.8594 3.46875L10.5469 21.5156L14.4531 44.6406L31.3281 50.5L50 39.3281L30.8594 3.46875Z"
-        fill="#757575"
+        :fill="secondaryColor"
       />
       <path
         d="M40.625 9.875H9.375V41.125H40.625V9.875Z"

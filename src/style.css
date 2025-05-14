@@ -148,32 +148,3 @@
 }
 
 
-.skill-card:hover:before, .skill-card:hover:after {
-  content: '';
-  position: absolute;
-  left: -3px;
-  top: -3px;
-  @apply rounded-md;
-  background: linear-gradient(45deg,  #7cb7ee, #41729F, #063663, #0b5da9, #7cb7ee, #41729F, #063663, #0b5da9);
-  background-size: 400%;
-  width: calc(100% + 6px);
-  height: calc(100% + 6px);
-  z-index: -1;
-  animation: steam 10s linear infinite;
-}
-
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 250% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.skill-card:after {
-  filter: blur(40px);
-}

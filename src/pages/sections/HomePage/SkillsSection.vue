@@ -35,27 +35,33 @@ const programmingLanguages = [
   {
     name: 'HTML',
     icon: HTMLIcon,
+    baseHex: '#e44c23',
   },
   {
     name: 'CSS',
     icon: CSSIcon,
+    baseHex: '#1373b4',
   },
   {
     name: 'JavaScript',
     icon: JavaScriptIcon,
+    baseHex: '#eccc34',
   },
 
   {
     name: 'PHP',
     icon: PHPIcon,
+    baseHex: '#737bb2',
   },
   {
     name: 'MySQL',
     icon: MySQLIcon,
+    baseHex: '#04638c',
   },
   {
     name: 'SQL Server',
     icon: SQLServerIcon,
+    baseHex: '#bb3634',
   },
 ];
 
@@ -63,43 +69,53 @@ const frameworksAndLibraries = [
   {
     name: 'Laravel',
     icon: LaravelIcon,
+    baseHex: '#fc0b04',
   },
   {
     name: 'Livewire',
     icon: LivewireIcon,
+    baseHex: '#ef69a3',
   },
   {
     name: 'Sanctum API',
     icon: SanctumIcon,
+    baseHex: '#44d6ef',
   },
 
   {
     name: 'Vue JS',
     icon: VueIcon,
+    baseHex: '#41b883',
   },
   {
     name: 'JQuery',
     icon: JQueryIcon,
+    baseHex: '#2c64b4',
   },
   {
     name: 'Alpine JS',
     icon: AlpineJSicon,
+    baseHex: '#77c1d2',
   },
   {
     name: 'Axios',
     icon: AxiosIcon,
+    baseHex: '#5d2ee4',
   },
   {
     name: 'Vite',
     icon: ViteIcon,
+    baseHex: '#a553fe',
   },
   {
     name: 'Tailwind CSS',
     icon: TailwindIcon,
+    baseHex: '#04bcdc',
   },
   {
     name: 'Bootstrap',
     icon: BootstrapIcon,
+    baseHex: '#7a13f7',
   },
 ];
 
@@ -107,35 +123,43 @@ const toolsAndSoftware = [
   {
     name: 'GitHub',
     icon: GithubIcon,
+    baseHex: '#a464ac',
   },
   {
     name: 'JIRA',
     icon: JiraIcon,
+    baseHex: '#2281f9',
   },
   {
     name: 'Azure AD',
     icon: AzureIcon,
+    baseHex: '#3bc7f3',
   },
 
   {
     name: 'VS Code',
     icon: VSCodeIcon,
+    baseHex: '#23aaf2',
   },
   {
     name: 'PHP Storm',
     icon: PHPStormIcon,
+    baseHex: '#fd318e',
   },
   {
     name: 'Workbench',
     icon: WorkbenchIcon,
+    baseHex: '#26557c',
   },
   {
     name: 'Figma',
     icon: FigmaIcon,
+    baseHex: '#EFEFEF',
   },
   {
     name: 'Postman',
     icon: PostmanIcon,
+    baseHex: '#ff6c37',
   },
 ];
 </script>
@@ -169,6 +193,7 @@ const toolsAndSoftware = [
             :key="frameworkAndLibrary.name"
             :title="frameworkAndLibrary.name"
             :icon="frameworkAndLibrary.icon"
+            :base-hex="frameworkAndLibrary.baseHex"
           />
         </div>
       </div>
@@ -185,6 +210,7 @@ const toolsAndSoftware = [
             :key="programmingLanguage.name"
             :title="programmingLanguage.name"
             :icon="programmingLanguage.icon"
+            :base-hex="programmingLanguage.baseHex"
           />
         </div>
       </div>
@@ -196,10 +222,12 @@ const toolsAndSoftware = [
             :key="frameworkAndLibrary.name"
             :title="frameworkAndLibrary.name"
             :icon="frameworkAndLibrary.icon"
+            :base-hex="frameworkAndLibrary.baseHex"
           />
         </div>
       </div>
     </div>
+
     <div class="hidden lg:flex w-full space-x-3 mb-5">
       <div class="w-full">
         <h1 class="text-xl mb-5">Tools & Software</h1>
@@ -209,6 +237,7 @@ const toolsAndSoftware = [
             :key="toolAndSoftware.name"
             :title="toolAndSoftware.name"
             :icon="toolAndSoftware.icon"
+            :base-hex="toolAndSoftware.baseHex"
           />
         </div>
       </div>
@@ -223,6 +252,7 @@ const toolsAndSoftware = [
             :key="toolAndSoftware.name"
             :title="toolAndSoftware.name"
             :icon="toolAndSoftware.icon"
+            :base-hex="toolAndSoftware.baseHex"
           />
         </div>
       </div>
