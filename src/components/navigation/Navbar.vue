@@ -23,26 +23,42 @@ const { scrollTo } = useScroll();
           </h1>
         </div>
         <div class="hidden md:block">
-          <ul class="flex items-center space-x-12">
+          <ul class="flex items-center space-x-8">
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('hero-section')">
+              <Button
+                variant="ghost"
+                class="text-base dark:text-neutral-400 dark:hover:text-white"
+                @click="scrollTo('hero-section')"
+              >
                 Home
-              </button>
+              </Button>
             </li>
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('skills-section')">
+              <Button
+                variant="ghost"
+                class="text-base dark:text-neutral-400 dark:hover:text-white"
+                @click="scrollTo('skills-section')"
+              >
                 Skills
-              </button>
+              </Button>
             </li>
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('projects-section')">
+              <Button
+                variant="ghost"
+                class="text-base dark:text-neutral-400 dark:hover:text-white"
+                @click="scrollTo('projects-section')"
+              >
                 Projects
-              </button>
+              </Button>
             </li>
             <li class="dark:text-neutral-200">
-              <button @click="scrollTo('about-section')">
+              <Button
+                variant="ghost"
+                class="text-base dark:text-neutral-400 dark:hover:text-white"
+                @click="scrollTo('about-section')"
+              >
                 About Me
-              </button>
+              </Button>
             </li>
           </ul>
         </div>
@@ -53,7 +69,7 @@ const { scrollTo } = useScroll();
             target="_blank"
             download
             size="sm"
-            class="text-xs px-4"
+            class="text-xs px-4 bg-brand text-white hover:bg-brand/80"
           >
             Download Resume
           </Button>
