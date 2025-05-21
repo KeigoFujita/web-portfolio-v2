@@ -23,7 +23,37 @@ import SQLServerIcon from '@/assets/icons/SQLServerIcon.vue';
 
 const projects = [
   {
-    name: 'CNX Shuttle Mobile',
+    name: 'CNX Connect',
+    description:
+      'CNX Connect is a smart recruitment platform for candidates and recruiters. Candidates can track their application progress and view status updates, while recruiters can assess applicants, manage candidate queues, and review scores and background information efficiently.',
+    img: cnxshuttleMobileImage,
+    imgBgClass: 'bg-[#212123]',
+    technologies: [
+      {
+        name: 'Laravel',
+        icon: LaravelIcon,
+      },
+      {
+        name: 'Vue JS',
+        icon: VueIcon,
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: TailwindIcon,
+      },
+
+      {
+        name: 'MySQL',
+        icon: WorkbenchIcon,
+      },
+      {
+        name: 'Vite',
+        icon: ViteIcon,
+      },
+    ],
+  },
+  {
+    name: 'CNX Shuttle',
     description:
       'CNX Shuttle Mobile Application provides an efficient shuttle experience for drivers and CNX employees. Drivers can view their schedules and manage passenger boarding, while passengers can input pickup and drop-off points, view trip history, and locate the nearest vehicle. ',
     img: cnxshuttleMobileImage,
@@ -53,37 +83,6 @@ const projects = [
       },
     ],
   },
-  {
-    name: 'CNX Shuttle Admin',
-    description:
-      'CNX Shuttle Admin allows administrators to efficiently manage and coordinate shuttle services. It includes functionalities for managing routes, drivers, vehicles, schedules, users, and trips, ensuring smooth and organized shuttle operations across all PH CNX sites.',
-    img: cnxshuttleImage,
-    link: 'https://admin-cnxshuttle.concentrix.com',
-    technologies: [
-      {
-        name: 'Laravel',
-        icon: LaravelIcon,
-      },
-      {
-        name: 'Vue JS',
-        icon: VueIcon,
-      },
-      {
-        name: 'Tailwind CSS',
-        icon: TailwindIcon,
-      },
-
-      {
-        name: 'MySQL',
-        icon: WorkbenchIcon,
-      },
-      {
-        name: 'Vite',
-        icon: ViteIcon,
-      },
-    ],
-  },
-
   {
     name: 'CNX Lighthouse',
     description:
@@ -270,9 +269,7 @@ const projects = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">
-      Projects
-    </h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Projects</h1>
 
     <div>
       <div class="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
