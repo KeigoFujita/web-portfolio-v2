@@ -179,6 +179,7 @@ const toolsAndSoftware = [
             :key="programmingLanguage.name"
             :title="programmingLanguage.name"
             :icon="programmingLanguage.icon"
+            :base-hex="programmingLanguage.baseHex"
           />
         </div>
       </div>

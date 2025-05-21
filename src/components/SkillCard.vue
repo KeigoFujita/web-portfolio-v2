@@ -150,8 +150,6 @@ function generateGradient(baseHex) {
 </template>
 
 <style scoped>
-@import '@/style.css';
-
 .skill-card:hover:before,
 .skill-card:hover:after {
   content: '';
@@ -159,7 +157,7 @@ function generateGradient(baseHex) {
   left: -3px;
   top: -3px;
 
-  @apply rounded-md;
+  border-radius: calc(var(--radius) /* 0.25rem = 4px */ - 2px);
   background: var(--bg-gradient);
   background-size: 400%;
   width: calc(100% + 6px);
