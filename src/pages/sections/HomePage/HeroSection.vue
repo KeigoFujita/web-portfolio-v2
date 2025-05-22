@@ -1,9 +1,8 @@
 <script setup>
-import HeroImage from '@/assets/HeroImage.vue';
-import GithubIcon from '@/assets/icons/GithubIcon.vue';
 import LinkedInIcon from '@/assets/icons/LinkedInIcon.vue';
 import Button from '@/components/ui/button/Button.vue';
 import GmailIcon from '@/assets/icons/GmailIcon.vue';
+import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
 </script>
 
 <template>
@@ -35,11 +34,9 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
           href="https://www.linkedin.com/in/keigo-victor-fujita/"
           target="_blank"
           variant="secondary"
-          class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
+          class="relative bg-[#171717] hover:bg-[#171717] cta-button hover:text-brand rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
         >
-          <div
-            class="px-3 md:px-6 flex items-center space-x-2 rounded-lg text-white"
-          >
+          <div class="px-3 md:px-6 flex items-center space-x-2 rounded-lg">
             <LinkedInIcon class="h-4 md-4 md:w-5 md:h-5" />
             <span class="text-xs md:text-sm">LinkedIn</span>
           </div>
@@ -47,15 +44,13 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
 
         <Button
           variant="secondary"
-          class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
+          class="relative bg-[#171717] hover:bg-[#171717] cta-button hover:text-brand rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
           as="a"
           href="https://github.com/KeigoFujita"
           target="_blank"
         >
-          <div
-            class="px-3 md:px-6 flex items-center space-x-2 rounded-lg text-white"
-          >
-            <GithubIcon class="h-4 md-4 md:w-5 md:h-5" />
+          <div class="px-3 md:px-6 flex items-center space-x-2 rounded-lg">
+            <GithubIconRaw class="h-4 md-4 md:w-5 md:h-5" />
             <span class="text-xs md:text-sm">GitHub</span>
           </div>
         </Button>
@@ -64,11 +59,9 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
           as="a"
           href="mailto:keigofujita19@gmail.com"
           variant="secondary"
-          class="bg-[#171717] rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
+          class="relative bg-[#171717] hover:bg-[#171717] cta-button hover:text-brand rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
         >
-          <div
-            class="px-3 md:px-6 flex items-center space-x-2 rounded-lg text-white"
-          >
+          <div class="px-3 md:px-6 flex items-center space-x-2 rounded-lg">
             <GmailIcon class="h-4 md-4 md:w-5 md:h-5" />
             <span class="text-xs md:text-sm">Gmail</span>
           </div>
@@ -87,3 +80,44 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
     </div>
   </div>
 </template>
+
+<style scoped>
+.cta-button:hover:before,
+.cta-button:hover:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+
+  border-radius: calc(infinity * 1px);
+  background: linear-gradient(
+    45deg,
+    #9bf4f4,
+    #04e4e4,
+    #03a0a0,
+    #03a0a0,
+    #027272
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 10s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 250% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cta-button:after {
+  filter: blur(5px);
+}
+</style>

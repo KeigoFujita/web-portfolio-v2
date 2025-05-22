@@ -69,7 +69,7 @@ const { scrollTo } = useScroll();
             target="_blank"
             download
             size="sm"
-            class="text-xs px-4 bg-brand text-white hover:bg-brand/80"
+            class="text-xs px-4 bg-[#171717] hover:bg-brand hover:text-[#171717] text-brand border border-brand"
           >
             Download Resume
           </Button>
