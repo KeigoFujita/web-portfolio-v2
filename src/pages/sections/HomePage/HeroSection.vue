@@ -8,10 +8,17 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
 
 <template>
   <div
-    class="pt-20 md:pt-0 flex-col-reverse md:flex-row flex w-full items-center space-x-4 md:h-[calc(100vh-4rem)]"
+    class="pt-12 md:pt-0 flex-col-reverse md:flex-row flex items-center space-x-4 md:h-[calc(100vh-4rem)]"
   >
     <div class="space-y-6 md:w-7/12">
-      <div>
+      <div class="block md:hidden">
+        <h1 class="text-4xl md:text-6xl font-semibold h-10 mb-0">Hey There,</h1>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-3 h-10">I'm Keigo</h1>
+        <h2 class="text-2xl md:text-3xl text-neutral-400">
+          Full Stack Web Developer
+        </h2>
+      </div>
+      <div class="hidden md:block">
         <h1 class="text-4xl md:text-6xl font-semibold mb-3">
           Hey There, I'm Keigo
         </h1>
@@ -20,7 +27,9 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
         </h2>
       </div>
       <!-- Contact Buttons -->
-      <div class="flex-wrap md:flex-nowrap flex items-center space-x-2">
+      <div
+        class="flex-wrap md:flex-nowrap flex items-center space-x-2 pointer-events-auto"
+      >
         <Button
           as="a"
           href="https://www.linkedin.com/in/keigo-victor-fujita/"
@@ -74,7 +83,7 @@ import GmailIcon from '@/assets/icons/GmailIcon.vue';
       </p>
     </div>
     <div class="mb-10 w-full md:w-5/12 md:mb-0">
-      <HeroImage class="w-full" />
+      <!-- <HeroImage class="w-full" /> -->
     </div>
   </div>
 </template>

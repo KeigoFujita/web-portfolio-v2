@@ -7,8 +7,8 @@ const { scrollTo } = useScroll();
 </script>
 
 <template>
-  <nav class="fixed w-full top-0 dark:bg-[#111111] dark:text-white z-10">
-    <div class="px-4 md:px-12 lg:px-0 md:max-w-6xl mx-auto">
+  <nav class="fixed w-full top-0 dark:bg-[#111111] dark:text-white z-20">
+    <div class="px-4 md:px-12 lg:px-0 md:max-w-7xl mx-auto">
       <div class="w-full flex items-center justify-between">
         <div class="flex h-16 items-center space-x-2 md:space-x-4">
           <img
