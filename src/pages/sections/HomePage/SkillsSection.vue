@@ -166,7 +166,7 @@ const toolsAndSoftware = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Skills</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10 text-brand">Skills</h1>
 
     <div class="block lg:hidden">
       <div class="mb-10">

@@ -12,14 +12,16 @@ import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
     <div class="space-y-6 md:w-7/12">
       <div class="block md:hidden">
         <h1 class="text-4xl md:text-6xl font-semibold h-10 mb-0">Hey There,</h1>
-        <h1 class="text-4xl md:text-6xl font-semibold mb-3 h-10">I'm Keigo</h1>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-3 h-10 text-brand">
+          I'm Keigo
+        </h1>
         <h2 class="text-2xl md:text-3xl text-neutral-400">
           Full Stack Web Developer
         </h2>
       </div>
       <div class="hidden md:block">
         <h1 class="text-4xl md:text-6xl font-semibold mb-3">
-          Hey There, I'm Keigo
+          Hey There, <span class="text-brand">I'm Keigo</span>
         </h1>
         <h2 class="text-2xl md:text-3xl text-neutral-400">
           Full Stack Web Developer
