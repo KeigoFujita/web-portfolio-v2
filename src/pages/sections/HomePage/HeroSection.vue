@@ -10,16 +10,16 @@ import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
     class="pt-12 md:pt-0 flex-col-reverse md:flex-row flex items-center space-x-4 md:h-[calc(100vh-4rem)]"
   >
     <div class="space-y-6 md:w-7/12">
-      <div class="block md:hidden">
+      <div class="block sm:hidden">
         <h1 class="text-4xl md:text-6xl font-semibold h-10 mb-0">Hey There,</h1>
         <h1 class="text-4xl md:text-6xl font-semibold mb-3 h-10 text-brand">
           I'm Keigo
         </h1>
-        <h2 class="text-2xl md:text-3xl text-neutral-400">
+        <h2 class="text-xl md:text-3xl text-neutral-400">
           Full Stack Web Developer
         </h2>
       </div>
-      <div class="hidden md:block">
+      <div class="hidden sm:block">
         <h1 class="text-4xl md:text-6xl font-semibold mb-3">
           Hey There, <span class="text-brand">I'm Keigo</span>
         </h1>
@@ -39,7 +39,7 @@ import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
           class="relative bg-[#171717] hover:bg-[#171717] cta-button hover:text-brand rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
         >
           <div class="px-3 md:px-6 flex items-center space-x-2 rounded-lg">
-            <LinkedInIcon class="h-4 md-4 md:w-5 md:h-5" />
+            <LinkedInIcon class="size-3.5 md:size-4.5" />
             <span class="text-xs md:text-sm">LinkedIn</span>
           </div>
         </Button>
@@ -52,7 +52,7 @@ import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
           target="_blank"
         >
           <div class="px-3 md:px-6 flex items-center space-x-2 rounded-lg">
-            <GithubIconRaw class="h-4 md-4 md:w-5 md:h-5" />
+            <GithubIconRaw class="size-3.5 md:size-4.5" />
             <span class="text-xs md:text-sm">GitHub</span>
           </div>
         </Button>
@@ -64,7 +64,7 @@ import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
           class="relative bg-[#171717] hover:bg-[#171717] cta-button hover:text-brand rounded-full px-0 py-0 h-9 md:h-11 mb-4 md:mb-0"
         >
           <div class="px-3 md:px-6 flex items-center space-x-2 rounded-lg">
-            <GmailIcon class="h-4 md-4 md:w-5 md:h-5" />
+            <GmailIcon class="size-3.5 md:size-4.5" />
             <span class="text-xs md:text-sm">Gmail</span>
           </div>
         </Button>

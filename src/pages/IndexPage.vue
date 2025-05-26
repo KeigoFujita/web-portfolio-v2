@@ -11,7 +11,7 @@ import HoneycombSphere3D from '@/components/3d/HoneycombSphere3D.vue';
   <BaseLayout>
     <HoneycombSphere3D />
     <div class="relative h-screen pointer-events-none">
-      <div class="relative px-6 md:px-12 lg:px-0 md:max-w-7xl mx-auto z-10">
+      <div class="relative px-6 sm:px-12 md:max-w-6xl mx-auto z-10">
         <HeroSection
           id="hero-section"
           class="mt-0 md:mt-0"
@@ -19,9 +19,7 @@ import HoneycombSphere3D from '@/components/3d/HoneycombSphere3D.vue';
       </div>
     </div>
     <div class="relative w-full bg-[#0a0a0a] z-10">
-      <div
-        class="relative bg-[#0a0a0a] px-6 md:px-12 lg:px-0 md:max-w-7xl mx-auto"
-      >
+      <div class="relative bg-[#0a0a0a] px-6 sm:px-12 md:max-w-6xl mx-auto">
         <SkillsSection id="skills-section" />
         <ProjectsSection id="projects-section" />
         <AboutSection id="about-section" />

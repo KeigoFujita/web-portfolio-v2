@@ -8,21 +8,21 @@ const { scrollTo } = useScroll();
 
 <template>
   <nav class="fixed w-full top-0 dark:bg-[#111111] dark:text-white z-20">
-    <div class="px-4 md:px-12 lg:px-0 md:max-w-7xl mx-auto">
+    <div class="px-6 sm:px-12 md:max-w-6xl mx-auto">
       <div class="w-full flex items-center justify-between h-16">
         <Button
           variant="ghost"
           as="a"
-          class="dark:hover:bg-transparent group"
+          class="dark:hover:bg-transparent group pl-0"
         >
           <div class="flex items-center space-x-2 md:space-x-4">
             <img
-              class="size-8 transition-all"
+              class="size-6 md:size-8 transition-all"
               :src="logo"
               alt="Keigo Victor FUjita"
             />
             <h1
-              class="dark:text-white font-semibold inline-flex md:hidden lg:inline-flex"
+              class="dark:text-white font-semibold text-xs md:text-sm inline-flex md:hidden lg:inline-flex"
             >
               KEIGO FUJITA
             </h1>
