@@ -9,7 +9,7 @@ import GithubIconRaw from '@/assets/icons/GithubIconRaw.vue';
   <div
     class="pt-12 md:pt-0 flex-col-reverse md:flex-row flex items-center space-x-4 md:h-[calc(100vh-4rem)]"
   >
-    <div class="space-y-6 md:w-7/12">
+    <div class="space-y-6 md:w-9/12">
       <div class="block sm:hidden">
         <h1 class="text-4xl md:text-6xl font-semibold h-10 mb-0">Hey There,</h1>
         <h1 class="text-4xl md:text-6xl font-semibold mb-3 h-10 text-brand">
