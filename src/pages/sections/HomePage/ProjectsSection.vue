@@ -269,7 +269,9 @@ const projects = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Projects</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10 text-brand">
+      Projects
+    </h1>
 
     <div>
       <div class="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">

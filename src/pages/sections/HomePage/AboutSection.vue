@@ -20,7 +20,9 @@ let galleryImages = [
 
 <template>
   <div class="py-12 md:py-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">About Me</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10 text-brand">
+      About Me
+    </h1>
     <div class="flex flex-col-reverse md:flex-row mb-10">
       <div class="w-full md:w-3/5 md:pr-16">
         <h1 class="font-semibold text-xl text-white mb-5">

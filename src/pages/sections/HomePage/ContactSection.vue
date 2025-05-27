@@ -9,10 +9,14 @@ import Button from '@/components/ui/button/Button.vue';
 
 <template>
   <div class="px-12 py-16 lg:py-24 border-t border-neutral-800">
-    <h1 class="md:hidden text-4xl font-semibold mb-10 text-center">Contact</h1>
+    <h1 class="md:hidden text-4xl font-semibold mb-10 text-center text-brand">
+      Contact
+    </h1>
     <div class="flex flex-col-reverse lg:flex-row md:max-w-6xl mx-auto">
       <div class="text-center md:text-left">
-        <h1 class="hidden md:block text-6xl font-semibold mb-10">Contact</h1>
+        <h1 class="hidden md:block text-6xl font-semibold mb-10 text-brand">
+          Contact
+        </h1>
         <h4 class="text-xl md:text-2xl mb-2 font-semibold">
           Wanna get in touch or talk about a project?
         </h4>
