@@ -10,9 +10,7 @@ import AlpineJSicon from '@/assets/icons/AlpineJSicon.vue';
 import JavaScriptIcon from '@/assets/icons/JavaScriptIcon.vue';
 import HTMLIcon from '@/assets/icons/HTMLIcon.vue';
 import PowerBuilderIcon from '@/assets/icons/PowerBuilderIcon.vue';
-
-import cnxshuttleImage from '@/assets/project_images/cnxshuttle.png';
-import cnxshuttleMobileImage from '@/assets/project_images/cnxshuttle_mobile.png';
+import cnxshuttleMobileImage from '@/assets/project_images/cnxshuttle.png';
 import lighthouseImage from '@/assets/project_images/lighthouse.png';
 import centroImage from '@/assets/project_images/centro.png';
 import larabuildImage from '@/assets/project_images/larabuild.png';
@@ -149,7 +147,7 @@ const projects = [
     description:
       'Larabuild Documentation is a comprehensive guide for developers on our team. It provides detailed instructions on workflows, project setup, cloning, creating new projects, and includes documentation for both Vue and Laravel projects, as well as API documentation.',
     img: larabuildImage,
-    link: 'https://larabuild-docs.vercel.app',
+    link: 'https://docs-larabuild.vercel.app',
     repositoryLink: 'https://github.com/keigo56/larabuild-docs',
     technologies: [
       {
