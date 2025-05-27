@@ -9,14 +9,12 @@ import HoneycombSphere3D from '@/components/3d/HoneycombSphere3D.vue';
 </script>
 <template>
   <BaseLayout>
-    <HoneycombSphere3D />
-    <div class="relative h-screen pointer-events-none">
-      <div class="relative px-6 sm:px-12 md:max-w-6xl mx-auto z-10">
-        <HeroSection
-          id="hero-section"
-          class="mt-0 md:mt-0"
-        />
-      </div>
+    <div class="relative px-6 sm:px-12 md:max-w-6xl mx-auto">
+      <HoneycombSphere3D />
+      <HeroSection
+        id="hero-section"
+        class="pointer-events-none z-10 relative"
+      />
     </div>
     <div class="relative w-full bg-[#0a0a0a] z-10">
       <div class="relative bg-[#0a0a0a] px-6 sm:px-12 md:max-w-6xl mx-auto">

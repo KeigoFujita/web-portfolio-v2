@@ -30,7 +30,7 @@ function initializeCamera() {
   const width = container.clientWidth;
   const height = container.clientHeight;
 
-  camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+  camera = new THREE.PerspectiveCamera(70, width / height, 0.1, 1000);
   camera.position.set(2, 1, 2);
 
   return { width, height };
@@ -221,11 +221,8 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="absolute w-full h-[500px] md:h-screen md:w-full -top-16 md:top-0 -right-54 md:-right-20 z-0"
+    class="absolute size-[500px] -right-64 top-32 md:size-[800px] lg:size-[1000px] md:-right-1/3 md:top-1/2 transform -translate-y-1/2 block z-0"
   >
-    <canvas
-      ref="canvasRef"
-      class="absolute md:left-96 block"
-    ></canvas>
+    <canvas ref="canvasRef"></canvas>
   </div>
 </template>
