@@ -74,7 +74,9 @@ let galleryImages = [
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10">
+    <!-- <div
+      class="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 mb-10"
+    >
       <div
         v-for="image in galleryImages"
         :key="image"
@@ -86,7 +88,7 @@ let galleryImages = [
           alt="Image 1"
         />
       </div>
-    </div>
+    </div> -->
     <div>
       <h1 class="font-semibold text-2xl md:text-3xl text-white mb-5">
         Awards and Recognition:
