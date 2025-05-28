@@ -25,8 +25,8 @@ import GithubIcon from '@/assets/icons/GithubIcon.vue';
         </div>
         <div class="hidden lg:block">
           <div class="text-xs text-neutral-600 text-center">
-            <p>Version 2.0</p>
-            <p>Copyright 2024 © Keigo Fujita</p>
+            <p>Version 2.0.0</p>
+            <p>Copyright 2025 © Keigo Fujita</p>
             <p>All Rights Reserved</p>
           </div>
         </div>
@@ -92,8 +92,8 @@ import GithubIcon from '@/assets/icons/GithubIcon.vue';
         </div>
         <div class="block lg:hidden">
           <div class="text-xs text-neutral-600 text-center">
-            <p>Version 2.0</p>
-            <p>Copyright 2024 © Keigo Fujita</p>
+            <p>Version 2.0.0</p>
+            <p>Copyright 2025 © Keigo Fujita</p>
             <p>All Rights Reserved</p>
           </div>
         </div>

@@ -10,9 +10,8 @@ import AlpineJSicon from '@/assets/icons/AlpineJSicon.vue';
 import JavaScriptIcon from '@/assets/icons/JavaScriptIcon.vue';
 import HTMLIcon from '@/assets/icons/HTMLIcon.vue';
 import PowerBuilderIcon from '@/assets/icons/PowerBuilderIcon.vue';
-
-import cnxshuttleImage from '@/assets/project_images/cnxshuttle.png';
-import cnxshuttleMobileImage from '@/assets/project_images/cnxshuttle_mobile.png';
+import cnxconnectImage from '@/assets/project_images/cnxconnect.png';
+import cnxshuttleMobileImage from '@/assets/project_images/cnxshuttle.png';
 import lighthouseImage from '@/assets/project_images/lighthouse.png';
 import centroImage from '@/assets/project_images/centro.png';
 import larabuildImage from '@/assets/project_images/larabuild.png';
@@ -26,8 +25,8 @@ const projects = [
     name: 'CNX Connect',
     description:
       'CNX Connect is a smart recruitment platform for candidates and recruiters. Candidates can track their application progress and view status updates, while recruiters can assess applicants, manage candidate queues, and review scores and background information efficiently.',
-    img: cnxshuttleMobileImage,
-    imgBgClass: 'bg-[#212123]',
+    img: cnxconnectImage,
+    imgBgClass: 'bg-[#769FC2]',
     technologies: [
       {
         name: 'Laravel',
@@ -58,7 +57,7 @@ const projects = [
       'CNX Shuttle Mobile Application provides an efficient shuttle experience for drivers and CNX employees. Drivers can view their schedules and manage passenger boarding, while passengers can input pickup and drop-off points, view trip history, and locate the nearest vehicle. ',
     img: cnxshuttleMobileImage,
     link: 'https://cnxshuttle.concentrix.com',
-    imgBgClass: 'bg-[#212123]',
+    imgBgClass: 'bg-[#98E6DC]',
     technologies: [
       {
         name: 'Laravel',
@@ -86,7 +85,7 @@ const projects = [
   {
     name: 'CNX Lighthouse',
     description:
-      'CNX Lighthouse Application helps CNX employees find career opportunities based on their skills, promoting internal promotions and transfers. Recruiters create job scorecards to match candidates to roles, and employees discover suitable job openings.',
+      'CNX Lighthouse Application helps Concentrix employees find career opportunities based on their skills, promoting internal promotions and transfers. Recruiters create job scorecards to match candidates to roles, and employees discover suitable job openings.',
     img: lighthouseImage,
     link: 'https://lighthouse.concentrix.com',
     technologies: [
@@ -147,9 +146,9 @@ const projects = [
   {
     name: 'Larabuild Documentation',
     description:
-      'Larabuild Documentation is a comprehensive guide for developers on our team. It provides detailed instructions on workflows, project setup, cloning, creating new projects, and includes documentation for both Vue and Laravel projects, as well as API documentation.',
+      'Larabuild Documentation is a comprehensive guide for developers on our team. It provides detailed instructions on workflows, project setup, creating new projects, and includes documentation for both Vue and Laravel projects, as well as API documentation.',
     img: larabuildImage,
-    link: 'https://larabuild-docs.vercel.app',
+    link: 'https://docs-larabuild.vercel.app',
     repositoryLink: 'https://github.com/keigo56/larabuild-docs',
     technologies: [
       {
@@ -193,7 +192,7 @@ const projects = [
   {
     name: 'NEU Appointment System',
     description:
-      'NEU Appointment System is a school appointment tool that allows students to book appointments for various tasks like submission of requirements, payments to cashier and other school related activities.',
+      'NEU Appointment System is a school appointment tool that allows students to book appointments for various tasks like submission of school requirements, payments to cashier and other school related activities.',
     img: larabuildImage,
     repositoryLink: 'https://github.com/keigo56/neuas',
     technologies: [
@@ -269,7 +268,9 @@ const projects = [
 
 <template>
   <div class="pt-24">
-    <h1 class="text-4xl md:text-6xl font-semibold mb-10">Projects</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold mb-10 text-brand">
+      Projects
+    </h1>
 
     <div>
       <div class="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">

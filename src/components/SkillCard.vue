@@ -138,10 +138,10 @@ function generateGradient(baseHex) {
       <component
         :is="props.icon"
         :active="isHovered"
-        class="h-8 md:h-10 mb-2 group-hover:text-[var(--text-color)] group-hover:drop-shadow-[0_0_25px_var(--text-color)] group-hover:transition group-hover:duration-100"
+        class="h-6 md:h-10 mb-2 group-hover:text-[var(--text-color)] group-hover:drop-shadow-[0_0_25px_var(--text-color)] group-hover:transition group-hover:duration-100"
       />
       <span
-        class="font-semibold text-neutral-300 text-sm select-none group-hover:text-[var(--text-color)]"
+        class="sm:font-semibold text-neutral-300 text-xs sm:text-sm select-none group-hover:text-[var(--text-color)]"
       >
         {{ props.title }}
       </span>
