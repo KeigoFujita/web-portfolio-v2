@@ -28,11 +28,11 @@ function openLink(link) {
     class="p-6 w-full bg-[#171717] bg-opacity-[79%] rounded border-2 space-y-4"
   >
     <div
-      class="px-3 rounded-sm group"
+      class="px-3 overflow-hidden h-56 rounded-sm group"
       :class="[imgBgClass]"
     >
       <img
-        class="group-hover:scale-90 spect-square w-full transition-all"
+        class="group-hover:scale-95 spect-square w-full transition-all"
         :src="img"
         :alt="name"
       />
